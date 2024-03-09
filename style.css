@@ -1,0 +1,380 @@
+body {
+    background-color: #000;
+    height: 100%;
+    margin: 0;
+}
+
+/* All the pages */
+.container{
+    height: 100vh;
+}
+
+.profile, .contacts {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* .cursor-circle {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.241) 10%, rgba(255,255,255,0) 70%);
+} */
+
+
+
+
+
+/* first page of profile with name and image */
+.profile{
+    flex-direction: column;
+}
+.profile img{
+    border-radius: 10px ;
+}
+.profile h1, h2{
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll-down-icon {
+    width: 25px;
+    height: 45px;
+    border-radius: 100px;
+    border: 2px solid white;
+    position: relative;
+    top: 17%;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: white;
+      border-radius: 100px;
+      top: 8px;
+      left: 10px;
+      opacity: 0;
+      animation: scroll-down-animation 2.5s infinite;
+    }
+}
+  
+@keyframes scroll-down-animation {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+      height: 5px;
+    }
+    20% {
+      height: 10px;
+      top: 8px;
+    }
+    55% {
+      top: 30px;
+    }
+    60% {
+      height: 5px;
+    }
+    70% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      height: 5px;
+      top: 30px;
+      opacity: 0;
+    }
+}
+
+
+
+
+/* second page experience section */
+.experience {
+    position: relative;
+    height: 240vh;
+    color: #00d6ab;
+    font-family: "Anta", sans-serif;
+    font-size: 25px;
+    background-color: #06416b;
+    background-image: linear-gradient(to top, #000, #06416b, #06416b, #06416b, #06416b, #06416b, #06416b, #06416b, #000);
+}
+.line {
+    position: absolute;
+    top: 0vh;
+    left: 50%;
+    width: 2px;
+    max-height: 335vh;
+    background-color: rgb(255, 255, 255);
+    transition: height 0.3s ease;
+    z-index: 9999;
+  }
+
+
+
+.FSD, .DEI, .SE, .Gesture, .Audiobooks, .Bus, .AI, .Tracking{
+    position: absolute;
+    font-size: 20px;
+}
+
+.FSD-date{
+    position: absolute;
+    font-size: 20px;
+    top: 5%;
+    left: 33%;
+}
+.FSD{
+    top: 5%;
+    left: 51%;
+}
+.FSD-discription{
+    font-size: 20px;
+    color: white;
+}
+
+.AI{
+    top: 15%;
+    left: 33%;   
+}
+.AI-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 17%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
+
+
+.DEI-date{
+    position: absolute;
+    font-size: 20px;
+    top: 28%;
+    left: 33%;
+}
+.DEI{
+    top: 28%;
+    left: 51%;
+}
+.DEI-discription{
+    font-size: 20px;
+    color: white;
+}
+
+
+.Tracking{
+    top: 38%;
+    left: 33%;   
+}
+.Tracking-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 40%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
+
+
+.Bus{
+    top: 49%;
+    left: 33%;   
+}
+.Bus-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 51%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
+
+.Audiobooks{
+    top: 60%;
+    left: 33%;   
+}
+.Audiobooks-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 62%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
+.SE-date{
+    position: absolute;
+    font-size: 20px;
+    top: 73%;
+    left: 33%;
+}
+.SE{
+    top: 73%; 
+    left: 51%;   
+}
+.SE-discription{
+    font-size: 20px;
+    color: white;
+}
+
+.Gesture{
+    top: 85%;
+    left: 26%;   
+}
+.Gesture-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 87%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
+
+
+
+
+/* skills experience page svg design */
+.skills {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    font-family: "Anta", sans-serif;
+    font-size: 20px;
+    background-color: #000;
+}
+.card1, .card2, .card3, .card4{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 8rem;
+    background: rgba(44, 44, 46, 0.53);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+.cardLine{
+    position: absolute;
+    width: 4px;
+    height: 85%;
+    background-color: #00d6ab;
+    left: 4%;
+    top: 8%;
+    border-radius: 2px;
+}
+.cardTitle{
+    color: #00d6ab;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.cardDetails{
+    color: white;
+    font-size: 20px;
+    margin-left: 1rem;
+    line-height: 1.2;
+}
+.card1{
+    left: 52%;
+    top: 10%;
+}
+.card2{
+    left: 52%;
+    top: 50%;
+}
+.card3{
+    right: 52%;
+    top: 10%;
+}
+.card4{
+    right: 52%;
+    top: 50%;
+}
+.cardLine3{
+    position: absolute;
+    width: 4px;
+    height: 85%;
+    background-color: #00d6ab;
+    right: 4%;
+    top: 8%;
+    border-radius: 2px;
+}
+.cardTitle3{
+    color: #00d6ab;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+.cardDetails3{
+    color: white;
+    font-size: 20px;
+    margin-right: 1rem;
+    line-height: 1.2;
+}
+.cardLine4{
+    position: absolute;
+    width: 4px;
+    height: 85%;
+    background-color: #00d6ab;
+    right: 4%;
+    top: 8%;
+    border-radius: 2px;
+}
+.cardTitle4{
+    color: #00d6ab;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+.cardDetails4{
+    color: white;
+    font-size: 20px;
+    margin-right: 1rem;
+    line-height: 1.2;
+}
+
+
+
+
+
+
+/* last page contacts page */
+.contacts{
+    background-color: #2c3e50;
+}
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+    text-align: center;
+    cursor: none;
+}
+.contact-container a {
+    width: 26%;
+    text-decoration: none;
+}
+.contact-container h1{
+    font-family: "Anta", sans-serif;
+    font-size: 50px;
+    margin: 0;
+    color: white;
+}
+.contact-container h1:hover{
+    color: #1e9890;
+    transition: color 0.5s;
+    cursor: none;
+}
+
