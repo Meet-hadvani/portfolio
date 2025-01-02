@@ -125,19 +125,34 @@ body {
 
 
 
-.FSD, .DEI, .SE, .Gesture, .Audiobooks, .Bus, .AI, .Tracking{
+.ASSIL, .FSD, .DEI, .SE, .Gesture, .Audiobooks, .Bus, .AI, .Tracking{
     position: absolute;
     font-size: 20px;
 }
 
-.FSD-date{
+.ASSIL-date{
     position: absolute;
     font-size: 20px;
     top: 5%;
     left: 33%;
 }
-.FSD{
+.ASSIL{
     top: 5%;
+    left: 51%;
+}
+.ASSIL-discription{
+    font-size: 20px;
+    color: white;
+}
+
+.FSD-date{
+    position: absolute;
+    font-size: 20px;
+    top: 15%;
+    left: 33%;
+}
+.FSD{
+    top: 15%;
     left: 51%;
 }
 .FSD-discription{
@@ -146,13 +161,13 @@ body {
 }
 
 .AI{
-    top: 15%;
+    top: 25%;
     left: 33%;   
 }
 .AI-discription{
     position: absolute;
     font-size: 20px;
-    top: 17%;
+    top: 27%;
     left: 15%;
     width: 35%;
     color: white;
@@ -162,11 +177,11 @@ body {
 .DEI-date{
     position: absolute;
     font-size: 20px;
-    top: 28%;
+    top: 38%;
     left: 33%;
 }
 .DEI{
-    top: 28%;
+    top: 38%;
     left: 51%;
 }
 .DEI-discription{
@@ -176,13 +191,13 @@ body {
 
 
 .Tracking{
-    top: 38%;
+    top: 48%;
     left: 33%;   
 }
 .Tracking-discription{
     position: absolute;
     font-size: 20px;
-    top: 40%;
+    top: 50%;
     left: 15%;
     width: 35%;
     color: white;
@@ -190,23 +205,10 @@ body {
 
 
 .Bus{
-    top: 49%;
-    left: 33%;   
-}
-.Bus-discription{
-    position: absolute;
-    font-size: 20px;
-    top: 51%;
-    left: 15%;
-    width: 35%;
-    color: white;
-}
-
-.Audiobooks{
     top: 60%;
     left: 33%;   
 }
-.Audiobooks-discription{
+.Bus-discription{
     position: absolute;
     font-size: 20px;
     top: 62%;
@@ -214,14 +216,27 @@ body {
     width: 35%;
     color: white;
 }
+
+.Audiobooks{
+    top: 68%;
+    left: 33%;   
+}
+.Audiobooks-discription{
+    position: absolute;
+    font-size: 20px;
+    top: 70%;
+    left: 15%;
+    width: 35%;
+    color: white;
+}
 .SE-date{
     position: absolute;
     font-size: 20px;
-    top: 73%;
+    top: 80%;
     left: 33%;
 }
 .SE{
-    top: 73%; 
+    top: 80%; 
     left: 51%;   
 }
 .SE-discription{
@@ -230,13 +245,13 @@ body {
 }
 
 .Gesture{
-    top: 85%;
+    top: 86%;
     left: 26%;   
 }
 .Gesture-discription{
     position: absolute;
     font-size: 20px;
-    top: 87%;
+    top: 88%;
     left: 15%;
     width: 35%;
     color: white;
@@ -375,6 +390,5 @@ body {
 .contact-container h1:hover{
     color: #1e9890;
     transition: color 0.5s;
-    cursor: none;
 }
 
